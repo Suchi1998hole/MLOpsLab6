@@ -10,9 +10,9 @@ from sklearn.model_selection import train_test_split
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Train an XGBoost multiclass model on a dataset different from the lab notebook."
+        description="Train an XGBoost multiclass model."
     )
-    parser.add_argument("--project", default="Lab1-alternative-data")
+    parser.add_argument("--project", default="Lab6-data")
     parser.add_argument("--run-name", default="xgboost-wine")
     parser.add_argument("--rounds", type=int, default=20)
     parser.add_argument("--test-size", type=float, default=0.30)
